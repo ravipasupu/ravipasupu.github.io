@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raviteja Pasupuleti — Senior Software Engineer & Technical Lead</title>
+<meta name="description" content="Senior Software Engineer and Technical Lead — Java, Spring, Angular, AWS. 8+ years building enterprise pricing platforms; AWS Certified Cloud Practitioner.">
+<meta property="og:title" content="Raviteja Pasupuleti — Senior Software Engineer & Technical Lead">
+<meta property="og:description" content="Java · Spring · Angular · AWS. Featured project: RailQuote, a serverless AI pricing assistant on AWS.">
+<meta property="og:image" content="https://ravipasupu.github.io/assets/railquote-screenshot.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d4ed8'/%3E%3Ctext x='16' y='22' font-family='Inter,Arial' font-size='16' font-weight='700' fill='white' text-anchor='middle'%3ERP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#ffffff;--fg:#0f172a;--muted:#475569;--line:#e2e8f0;--soft:#f8fafc;--soft2:#f1f5f9;--accent:#1d4ed8;--accent-soft:#eff6ff;--accent-text:#1e40af;--dark:#0f172a;--dark-fg:#cbd5e1;--btn-border:#cbd5e1}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0b1220;--fg:#e5e7eb;--muted:#9ca3af;--line:#1f2a44;--soft:#111a2e;--soft2:#182238;--accent:#60a5fa;--accent-soft:#172554;--accent-text:#bfdbfe;--dark:#060b16;--dark-fg:#9ca3af;--btn-border:#334155}}
+  :root[data-theme="dark"]{--bg:#0b1220;--fg:#e5e7eb;--muted:#9ca3af;--line:#1f2a44;--soft:#111a2e;--soft2:#182238;--accent:#60a5fa;--accent-soft:#172554;--accent-text:#bfdbfe;--dark:#060b16;--dark-fg:#9ca3af;--btn-border:#334155}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+  a{color:var(--accent)}
+  .wrap{max-width:1040px;margin:0 auto;padding-left:24px;padding-right:24px}
+  nav{display:flex;flex-wrap:wrap;align-items:center;gap:20px;padding-top:18px;padding-bottom:18px}
+  nav .name{font-weight:800;font-size:16px;letter-spacing:-.01em;margin-right:auto}
+  nav a{text-decoration:none;color:var(--fg);font-weight:500;opacity:.85}
+  nav a:hover{opacity:1}
+  .hero{padding:48px 24px 44px;display:flex;flex-wrap:wrap;gap:40px;align-items:center}
+  .hero .text{flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:18px}
+  .eyebrow{font-size:13px;font-weight:600;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
+  h1{margin:0;font-size:clamp(30px,4.2vw,42px);line-height:1.12;font-weight:800;letter-spacing:-.02em}
+  .lead{margin:0;font-size:17px;color:var(--muted);max-width:600px}
+  .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+  .btn{text-decoration:none;font-weight:600;padding:11px 18px;border-radius:8px;border:1px solid var(--btn-border);color:var(--fg);display:inline-block}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn.disabled{opacity:.55;cursor:default}
+  .badge-card{text-decoration:none;color:var(--fg);flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:8px;padding:20px 24px;border:1px solid var(--line);border-radius:12px;background:var(--soft)}
+  .badge-card img{width:130px;height:130px}
+  .badge-card b{font-size:14px}
+  .badge-card span{font-size:12px;color:var(--muted)}
+  .numbers{background:var(--dark);color:#fff}
+  .numbers .wrap{padding-top:26px;padding-bottom:26px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+  .numbers b{display:block;font-size:28px;font-weight:800}
+  .numbers span{font-size:13px;color:var(--dark-fg)}
+  section.block{padding-top:48px;padding-bottom:16px;display:flex;flex-direction:column;gap:16px}
+  .card{border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-wrap:wrap}
+  .card .body{flex:1 1 480px;min-width:0;padding:28px;display:flex;flex-direction:column;gap:14px}
+  .card h2{margin:0;font-size:28px;font-weight:800;letter-spacing:-.01em}
+  .card p{margin:0;color:var(--muted)}
+  .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:4px}
+  .step{background:var(--soft);border-radius:10px;padding:12px}
+  .step b{display:block;font-size:13px}
+  .step span{font-size:13px;color:var(--muted)}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{font-size:12px;font-weight:600;background:var(--accent-soft);color:var(--accent-text);padding:3px 9px;border-radius:999px}
+  .chip.grey{background:var(--soft2);color:var(--fg)}
+  .note{font-size:12px;color:var(--muted)}
+  .shot{flex:1 1 360px;min-width:0;background:var(--soft2);display:flex;align-items:center;justify-content:center;padding:24px}
+  .shot a{display:block;width:100%;max-width:420px;border-radius:10px;overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 30px rgba(2,6,23,.12)}
+  .shot img{display:block;width:100%;height:auto}
+  .exp{border:1px solid var(--line);border-radius:12px;padding:22px 24px;display:flex;flex-direction:column;gap:18px}
+  .exp .head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px}
+  .exp .head b{font-weight:800;font-size:20px}
+  .exp .head span{color:var(--muted)}
+  .roles{display:grid;grid-template-columns:180px minmax(0,1fr);gap:8px 20px}
+  .roles .when{color:var(--muted);font-size:14px}
+  .roles .role{display:flex;flex-direction:column;gap:8px}
+  .roles .role b{font-size:16px}
+  .roles .role div{font-size:14px;opacity:.9}
+  .skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+  .skill{background:var(--soft);border-radius:12px;padding:16px 18px}
+  .skill b{display:block;margin-bottom:6px}
+  .skill span{font-size:14px;opacity:.9}
+  .two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding-top:48px;padding-bottom:16px}
+  .two > div{display:flex;flex-direction:column;gap:12px}
+  .cert{text-decoration:none;color:var(--fg);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:flex;align-items:center;gap:14px}
+  .cert img{width:56px;height:56px}
+  .cert b{display:block}.cert span{font-size:13px;color:var(--muted)}
+  .edu{border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+  .edu b{display:block}.edu span{font-size:13px;color:var(--muted)}
+  footer{margin-top:32px;border-top:1px solid var(--line)}
+  footer .wrap{padding-top:32px;padding-bottom:48px;display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+  footer .t{font-weight:700;font-size:18px}
+  footer .s{flex:1 1 auto;color:var(--muted)}
+  footer .btn{padding:10px 16px}
+  .copy{font-size:12px;color:var(--muted);text-align:center;padding-bottom:24px}
+  @media (max-width:860px){.numbers .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}.steps,.skills{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media (max-width:600px){.numbers .wrap{grid-template-columns:1fr}.steps,.skills,.two{grid-template-columns:1fr}.roles{grid-template-columns:1fr}.hero{padding-top:28px}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <nav aria-label="Main">
+    <div class="name">Raviteja Pasupuleti</div>
+    <a href="#project">Project</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div>
+
+<header class="wrap hero">
+  <div class="text">
+    <div class="eyebrow">Atlanta, GA · Open to senior engineering and lead roles</div>
+    <h1>Senior Software Engineer &amp; Technical Lead<br>Java · Spring · Angular · AWS</h1>
+    <p class="lead">8+ years designing and delivering enterprise Java platforms. Currently the solution architect and team lead for a freight-rail pricing platform — 10+ Spring Boot microservices, Kafka event streaming, Angular front end — and leading its migration to AWS.</p>
+    <div class="btns">
+      <a class="btn primary" href="#project">See RailQuote</a>
+      <a class="btn" href="https://github.com/ravipasupu" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/raviteja-p-b3b2a467" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="assets/Raviteja_Pasupuleti_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+    </div>
+  </div>
+  <a class="badge-card" href="https://www.credly.com/badges/32ddbabb-2400-4f3d-8c50-40e92090ec66/public_url" target="_blank" rel="noopener">
+    <img src="assets/aws-ccp-badge.png" alt="AWS Certified Cloud Practitioner badge">
+    <b>AWS Certified Cloud Practitioner</b>
+    <span>Verify on Credly →</span>
+  </a>
+</header>
+
+<section class="numbers" aria-label="Highlights">
+  <div class="wrap">
+    <div><b>8+</b><span>years Java / Spring / Angular</span></div>
+    <div><b>10+</b><span>microservices owned end to end</span></div>
+    <div><b>30%</b><span>latency cut with Kafka fan-out</span></div>
+    <div><b>Lead</b><span>cross-functional eng + QA team</span></div>
+    <div><b>AWS</b><span>certified · EKS &amp; Databricks migrations</span></div>
+  </div>
+</section>
+
+<section id="project" class="wrap block" aria-label="Featured project">
+  <div class="eyebrow">Featured project · personal, open source</div>
+  <div class="card">
+    <div class="body">
+      <h2>RailQuote</h2>
+      <p>A serverless pricing assistant for freight rail: customer quote requests arrive by email, an AI agent extracts the order, prices it against live fuel, weather and risk data, and asks for anything missing — with a human approving every quote.</p>
+      <div class="steps">
+        <div class="step"><b>1 · Email in</b><span>Gmail → SES → Lambda; junk stripped, order fields extracted by Bedrock</span></div>
+        <div class="step"><b>2 · Agent prices it</b><span>Live diesel (EIA), weather (NWS), geo risk (GDELT) → auto-quote or ask</span></div>
+        <div class="step"><b>3 · Human in the loop</b><span>Chat per request with a tool-calling agent; quote PDF sent via SES</span></div>
+      </div>
+      <div class="chips">
+        <span class="chip">Lambda · Java 21</span><span class="chip">Bedrock agent</span><span class="chip">DynamoDB</span><span class="chip">SES</span><span class="chip">API Gateway</span><span class="chip">Cognito</span><span class="chip">Angular</span><span class="chip">AWS SAM</span>
+      </div>
+      <div class="btns">
+        <span class="btn primary disabled" title="In progress">Live app — coming soon</span>
+        <a class="btn" href="railquote/architecture.html">Architecture</a>
+        <a class="btn" href="railquote/mock.html">Interactive mock</a>
+        <a class="btn" href="https://github.com/ravipasupu/railquote" target="_blank" rel="noopener">Source</a>
+      </div>
+      <div class="note">Built as a personal learning project on a personal AWS account. The interactive mock runs entirely in your browser.</div>
+    </div>
+    <div class="shot">
+      <a href="railquote/mock.html" aria-label="Open the interactive RailQuote mock"><img src="assets/railquote-screenshot.png" alt="RailQuote screen: a quote request with extracted order, quote breakdown and agent chat"></a>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="wrap block" aria-label="Experience">
+  <div class="eyebrow">Experience</div>
+  <div class="exp">
+    <div class="head"><b>Norfolk Southern Corporation</b><span>2018 – present · Atlanta, GA · 8 years on one platform</span></div>
+    <div class="roles">
+      <div class="when">2021 – present</div>
+      <div class="role">
+        <b>Senior Technology Engineer — Team Lead &amp; Solution Architect</b>
+        <div>Own the architecture of the intermodal pricing platform: 10+ Spring Boot microservices (pricing core, optimizer, scenario/network modeling, lane processing, export) on OpenShift.</div>
+        <div>Designed the Kafka event-driven scale-out that fans network-modeling scenarios across parallel lane processors — inter-service latency down 30%.</div>
+        <div>Architected the AI-driven rate-request workflow: inbound request → automated rate lookup → approval routing → response delivery.</div>
+        <div>Lead a cross-functional engineering + QA team: sprint planning, refinements, technical direction and code quality. Work directly with business and operations stakeholders on requirements and roadmap.</div>
+        <div>Leading two platform migrations: OpenShift → AWS EKS, and SSIS/enterprise warehouse → Databricks. Datadog monitoring and on-call model for platform services.</div>
+      </div>
+      <div class="when">2018 – 2021</div>
+      <div class="role">
+        <b>Programmer Analyst (contract, via Technisar Solutions / Swift Solutions)</b>
+        <div>Built the Spring REST and ExtDirect Java APIs bridging ExtJS/Angular front ends to server-side logic; JSON/XML recommendation services with Jackson and JAXB; JUnit/Mockito coverage.</div>
+        <div>Front-end work in Angular 9, ExtJS, Bootstrap and jQuery for customer-facing pricing pages.</div>
+      </div>
+    </div>
+    <div class="chips">
+      <span class="chip grey">Java 21</span><span class="chip grey">Spring Boot</span><span class="chip grey">Kafka</span><span class="chip grey">Angular</span><span class="chip grey">OpenShift → AWS EKS</span><span class="chip grey">Databricks</span><span class="chip grey">Datadog</span><span class="chip grey">Hibernate</span>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="wrap block" aria-label="Skills">
+  <div class="eyebrow">Skills</div>
+  <div class="skills">
+    <div class="skill"><b>Backend</b><span>Java 21 · Spring Boot 3.5/4.0 · Spring Data JPA · REST/HATEOAS · microservices</span></div>
+    <div class="skill"><b>Cloud &amp; platform</b><span>AWS (EKS, Lambda, Bedrock, DynamoDB, SES) · OpenShift · Docker · Kubernetes · Jenkins · AWS SAM</span></div>
+    <div class="skill"><b>Messaging &amp; data</b><span>Kafka · TIBCO EMS · IBM MQ · SQL Server · Teradata · Databricks · SSIS</span></div>
+    <div class="skill"><b>Frontend</b><span>Angular 11–21 · TypeScript · RxJS</span></div>
+    <div class="skill"><b>Quality &amp; observability</b><span>SonarQube · SAST · JaCoCo · Datadog APM</span></div>
+    <div class="skill"><b>AI-assisted engineering</b><span>Claude · Cursor · GitHub Copilot · Bedrock tool-use agents</span></div>
+  </div>
+</section>
+
+<section class="wrap two" aria-label="Certification and education">
+  <div>
+    <div class="eyebrow">Certification</div>
+    <a class="cert" href="https://www.credly.com/badges/32ddbabb-2400-4f3d-8c50-40e92090ec66/public_url" target="_blank" rel="noopener">
+      <img src="assets/aws-ccp-badge.png" alt="">
+      <div><b>AWS Certified Cloud Practitioner</b><span>Amazon Web Services · verify on Credly</span></div>
+    </a>
+  </div>
+  <div>
+    <div class="eyebrow">Education</div>
+    <div class="edu">
+      <div><b>M.S. Computer Information Systems</b><span>Florida Institute of Technology · 2016</span></div>
+      <div><b>B.Tech Computer Science &amp; Engineering</b><span>Jawaharlal Nehru Technological University · 2013</span></div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="t">Contact</div>
+    <div class="s">Email is the fastest way to reach me.</div>
+    <a class="btn" href="mailto:paspuleti.raviteja@gmail.com">paspuleti.raviteja@gmail.com</a>
+    <a class="btn" href="https://github.com/ravipasupu" target="_blank" rel="noopener">github.com/ravipasupu</a>
+    <a class="btn" href="https://www.linkedin.com/in/raviteja-p-b3b2a467" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+  <div class="copy">© 2026 Raviteja Pasupuleti · Personal site. Views and projects are my own.</div>
+</footer>
+
+</body>
+</html>
